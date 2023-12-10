@@ -6,12 +6,7 @@ const slidesData = [
     title: "Service 1",
     description: "Description of Service 1",
     imageUrl: image1 // Reference to imported image
-  },
-  {
-    title: "Service 2",
-    description: "Description of Service 2",
-    imageUrl: image2 // Reference to imported image
-  },
+  }
 ];
 
 const ServicesPage = () => {
