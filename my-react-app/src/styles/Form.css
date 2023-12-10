@@ -1,0 +1,91 @@
+/* If you're using a container like <section class="form-section"> around your form */
+.form-section {
+    display: flex;
+    justify-content: center; /* This centers the form horizontally */
+    padding: 2rem; /* This adds padding, adjust as needed */
+  }
+  
+  .quote-form {
+    max-width: 500px; /* Adjust as needed for your design */
+    margin: auto; /* This will center the form in the page */
+    padding: 2rem; /* This will add padding inside the form */
+    background-color: #ffffff; /* Ensures the background is white */
+    border-radius: 10px; /* Keeps the rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Keeps the shadow */
+    margin-top: 2rem; /* Adjust if you need more space at the top */
+    margin-bottom: 2rem; /* Adjust if you need more space at the bottom */
+  }
+  
+  .quote-form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .quote-form input,
+  .quote-form textarea {
+    width: calc(100% - 1rem); /* Adjust width to account for padding */
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+  }
+  
+  .quote-form textarea {
+    height: 100px; 
+  }
+  
+  .quote-form button {
+    width: 100%; /* Ensure the button stretches to full width */
+    background-color: #FFA500;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .quote-form button:hover {
+    background-color: #cc8400; 
+  }
+
+
+  .quote-form textarea {
+    height: 100px;
+    resize: none; /* This will disable resizing */
+    /* ... other styles .
+    .. */
+    }
+    /* Existing styles for larger screens */
+.quote-form {
+  margin: 1rem;
+  padding: 1rem;
+  /* other styles */
+}
+
+/* Media query for mobile screens */
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  .quote-form {
+    margin: 0.5rem; /* Reduced margin */
+    padding: 0.5rem; /* Reduced padding */
+    width: auto; /* Allow it to expand naturally */
+    max-width: 100%; /* Prevent it from exceeding the viewport width */
+    box-sizing: border-box; /* Include padding and border in the element's width */
+  }
+
+  .quote-form input,
+  .quote-form textarea,
+  .quote-form button {
+    width: 100%; /* Full width of their container */
+    box-sizing: border-box; /* Include padding and border in the element's width */
+    margin: 0.5rem 0; /* Add some vertical space between elements */
+  }
+
+  .quote-form textarea {
+    /* If there's a specific height set, ensure it's appropriate for mobile */
+    height: auto; /* Or set a fixed height that makes sense on mobile */
+  }
+}
+
