@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import image1 from '../assets/images.jpg'; // Adjust the path as necessary
-import image2 from '../assets/DALL·E 2023-12-04 17.02.13 - A high-quality image representing a pressure washing business. The scene depicts a professional pressure washing service in action, cleaning a residen.png'; // Adjust the path as necessary
 
 const slidesData = [
   {
