@@ -34,7 +34,6 @@ const PrivacyPolicy = () => {
       <p>Cookies are files with a small amount of data which may include an anonymous unique identifier. Cookies are sent to your browser from a website and stored on your device. Other tracking technologies are also used such as beacons, tags, and scripts to collect and track information and to improve and analyze our Service.</p>
       <p>You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Service.</p>
       
-      // ... Continue with other sections like Service Providers, Security, Links to Other Sites, etc.
 
       <h2>Children's Privacy</h2>
       <p>Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13 years of age. If we become aware that we have collected Personal Data from children without verification of parental consent, we take steps to remove that information from our servers.</p>

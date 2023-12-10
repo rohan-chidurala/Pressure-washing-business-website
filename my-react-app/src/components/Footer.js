@@ -10,8 +10,7 @@ const Footer = () => {
           <p><i className="fas fa-envelope"></i> jspristinepressureclean@gmail.com</p>
         </div>
         <div className="footer-social">
-          <a href="https://www.facebook.com" className="social-link"><i className="fab fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com" className="social-link"><i className="fab fa-instagram"></i></a>
+
         </div>
         
         <div className="footer-action">
@@ -21,8 +20,7 @@ const Footer = () => {
       <div className="footer-bottom">
         <p>© 2023 J's Pristine Pressure Cleaning. All Rights Reserved.</p>
         <div className="footer-links">
-          <a href="#">Privacy Policy</a> | 
-          <a href="#">Terms of Service</a>
+
         </div>
       </div>
     </footer>
