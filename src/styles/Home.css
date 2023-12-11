@@ -1,0 +1,86 @@
+.full-screen-background {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center bottom;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%; 
+    margin: auto;
+  }
+
+  .description h2 {
+    font-size: 3.5rem; /* Larger font size for the heading */
+    font-weight: 700; /* Bolder font weight for the heading */
+    margin-bottom: 1rem; /* Space between the heading and paragraph */
+  }
+  
+  .description p {
+    font-size: 1rem;
+    line-height: 1.5; /* Increased line height for better readability */
+    margin-bottom: 2rem; /* Space between the paragraph and button */
+  }
+  
+  /* Add styles for the button if not already defined */
+  .button {
+    background-color: #FFA500; /* Orange color for the button */
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .button:hover {
+    background-color: #cc8400; /* Darker orange color on hover */
+  }
+
+
+  .description {
+    flex: 1;
+    margin: 1rem;
+    padding: 2rem; /* Increased padding for better spacing */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white; /* Text color white */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align text to the left */
+  }
+  
+  
+  @media (max-width: 768px) {
+    .full-screen-background {
+      height: auto; /* Adjust height for mobile to be auto */
+      width: auto;
+    }
+  
+    .content {
+      flex-direction: column; /* Stack children vertically */
+    }
+  
+    .description {
+      /* Remove flex: 1; to stop filling the entire flex container */
+      width: auto; /* Allow width to adjust to content with padding */
+      margin: 1rem;
+      margin-top: 5rem; /* Consistent margin around the description box */
+      padding: 1rem; /* Consistent padding inside the description box */
+      align-self: center; /* Center the description box within the content */
+    }
+    
+    .description h2, .description p {
+      text-align: center; /* Center-align the text for smaller screens */
+    }
+  }
+  
