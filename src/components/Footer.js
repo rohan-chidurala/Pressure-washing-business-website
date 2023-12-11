@@ -1,5 +1,6 @@
 import React from 'react';
-import '../styles/Footer.css'; // Make sure this import path is correct
+import { Link } from 'react-router-dom'; // Import Link
+import '../styles/Footer.css';
 
 const Footer = () => {
   return (
@@ -10,9 +11,8 @@ const Footer = () => {
           <p><i className="fas fa-envelope"></i> jspristinepressureclean@gmail.com</p>
         </div>
         <div className="footer-social">
-
+          {/* Social links can go here */}
         </div>
-        
         <div className="footer-action">
           <button className="action-button">Book Your Cleaning</button>
         </div>
@@ -20,7 +20,7 @@ const Footer = () => {
       <div className="footer-bottom">
         <p>© 2023 J's Pristine Pressure Cleaning. All Rights Reserved.</p>
         <div className="footer-links">
-
+          <Link to="/privacy-policy">Privacy Policy</Link> {/* Privacy Policy link */}
         </div>
       </div>
     </footer>
