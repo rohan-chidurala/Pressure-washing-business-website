@@ -25,7 +25,7 @@
 
 .testimonials {
   position: relative;
-  width: 100%;
+  width: 80%;
   max-width: 1200px; /* Max width to control the container size */
   margin: auto;
   text-align: center;
@@ -98,8 +98,17 @@
   }
 }
 
+
 @media (max-width: 768px) {
+  .testimonial-list {
+    flex-direction: column; /* Stack testimonials vertically */
+    align-items: center; /* Center the items since they will be full width */
+    gap: 0.5rem; /* Reduce gap for smaller screens if necessary */
+  }
+
   .testimonial-item {
-    flex-basis: 100%; /* Full width on smaller screens */
+    flex-basis: auto; /* Allow the item to adjust based on its content */
+    margin: 0.5rem; /* Reduce margin for smaller screens */
+    padding: 0.5rem; /* Reduce padding for smaller screens */
   }
 }

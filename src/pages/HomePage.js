@@ -8,13 +8,46 @@ import backgroundImage from '../assets/pexels-photo-106399.jpeg'; // Import your
 import Form from '../components/Form';
 import Testimonial from '../components/Testimonial'; // Import your Testimonial component
 import ServicesPage from '../pages/ServicesPage';
+import WhyChooseUsPage from './WhyChooseUsPage'; // Import the new page component
 
 
 import review1 from '../assets/temp.png'; // Adjust the path as necessary
 import review2 from '../assets/review-2.jpg'; // Adjust the path as necessary
 import review3 from '../assets/review1.png'; // Adjust the path as necessary
 
+
+
+import houseWashingImg from '../assets/house washing.png';
+import drivewayCleaningImg from '../assets/Driveway.png';
+import windowCleaningImg from '../assets/window cleaning.png';
+
+
+
+
+
+const servicesData = [
+  {
+    title: "House Washing",
+    description: "Revamp your home's exterior with our eco-friendly house washing services, designed to remove dirt and mildew safely.",
+    imageUrl: houseWashingImg,
+  },
+  {
+    title: "Driveway & Sidewalk Cleaning",
+    description: "Enhance your entryway with our driveway and sidewalk cleaning, removing stains and spills with precision.",
+    imageUrl: drivewayCleaningImg,
+  },
+  {
+    title: "Window Cleaning",
+    description: "Experience crystal-clear views with our streak-free window cleaning service for all building types.",
+    imageUrl: windowCleaningImg,
+  }
+];
+
+
+
+
 const HomePage = () => {
+  const shouldShowLearnMoreButton = true;
 
   const navigate = useNavigate(); // Initialize useNavigate hook
 
@@ -36,6 +69,7 @@ const HomePage = () => {
           <Form></Form>
         </div>
       </div>
+      <WhyChooseUsPage></WhyChooseUsPage>
       <div className='testimonials-container'>
         <div className="testimonials">
             <h3>What Our Customers Say</h3>
@@ -62,7 +96,10 @@ const HomePage = () => {
           </div>
         </div>
       <div>
-        <ServicesPage></ServicesPage>
+        <ServicesPage 
+          servicesData={servicesData} 
+          addLearnMoreButton={shouldShowLearnMoreButton}
+        />
       </div>
     </div>
   );
