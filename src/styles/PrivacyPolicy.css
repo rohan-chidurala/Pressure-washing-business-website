@@ -1,82 +1,35 @@
-.footer {
-    background-color: #2c3e50; /* Adjust the color to match your brand */
-    color: white;
-    padding: 20px;
-    font-family: 'Arial', sans-serif;
+/* PrivacyPolicy.css */
+.privacy-policy-container {
+
+  max-width: 800px; /* Or your preferred 
+  max width */
+  margin: auto;
+  padding: 20px;
+  padding-top: 70px; /* Height of your navbar */
+
+  font-family: 'Arial', sans-serif; /* Use your website's font family */
+  line-height: 1.6;
+}
+
+
+
+.privacy-policy-container p, ul, li {
+  color: #333; /* A readable color for text */
+}
+
+.privacy-policy-container a {
+  color: #ff8c00; /* Orange from your website's palette */
+  text-decoration: none;
+}
+
+.privacy-policy-container a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+  .privacy-policy-container {
+    padding: 10px;
   }
-  
-  .footer-content {
-    display: flex;
-    justify-content: center; /* Center the content horizontally */
-    align-items: center;
-    flex-wrap: wrap; /* Wrap items for smaller screens */
-    max-width: 1200px; /* Set a max-width for the content */
-    margin: 0 auto; /* Center the content block */
-    gap: 20px; /* Space between items */
-  }
-  
-  .footer-contact,
-  .footer-social,
-  .footer-action {
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items */
-    padding: 0 10px; /* Padding on the sides */
-  }
-  
-  .footer-contact p,
-  .footer-bottom p,
-  .footer-links a {
-    margin: 5px 0;
-    font-size: 0.9em;
-  }
-  
-  .footer-contact i {
-    margin-right: 5px;
-  }
-  
-  .footer-social .social-link {
-    color: white;
-    margin: 0 5px; /* Reduce spacing between icons */
-    font-size: 1.4em; /* Larger icons for visibility */
-  }
-  
-  .footer-social .social-link:hover {
-    color: #18bc9c; /* Color change on hover */
-  }
-  
-  .footer-action .action-button {
-    background-color: #18bc9c; /* Bright color for action button */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .footer-action .action-button:hover {
-    background-color: #15a589; /* Darken color on hover */
-  }
-  
-  .footer-bottom {
-    display: flex;
-    justify-content: center; /* Center the bottom content */
-    align-items: center;
-    margin-top: 20px;
-    flex-direction: column; /* Stack items vertically */
-  }
-  
-  .footer-links {
-    margin: 10px 0;
-  }
-  
-  .footer-links a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-  }
-  
-  .footer-links a:hover {
-    text-decoration: underline;
-  }
-  
+}
+
+/* Add additional styles for buttons, list items, and other elements as needed */

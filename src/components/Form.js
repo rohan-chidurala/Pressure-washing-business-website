@@ -1,10 +1,10 @@
 import React from 'react';
 import '../styles/Form.css'; // Import your CSS file
 
-const Form = () => {
+const Form = ({ formName }) => {
   return (
     <div className="quote-form">
-        <h2>Get Your Free Quote</h2>
+        <h2>{formName}</h2>
         <form>
             <input type="text" placeholder="Name" />
             <input type="email" placeholder="Email" />

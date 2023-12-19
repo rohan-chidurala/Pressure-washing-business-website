@@ -1,0 +1,41 @@
+/* NotFoundPage.css */
+.not-found-container {
+    color: #333; /* Replace with your website's font color */
+    background-color: #fff; /* Replace with your website's background color */
+    font-family: 'Open Sans', sans-serif; /* Replace with your website's font-family */
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .not-found-container h1 {
+    color: #ff6666; /* Replace with your website's accent color */
+    font-size: 4em;
+  }
+  
+  .not-found-container p {
+    font-size: 1.5em;
+  }
+  
+  .not-found-button {
+    background-color: #ffa500; /* Replace with your website's button color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1em;
+    margin-top: 20px;
+  }
+  
+  
+  @media only screen and (max-width: 600px) {
+    .not-found-container {
+      padding: 20px;
+    }
+  
+    .not-found-container h1 {
+      font-size: 2em;
+    }
+  }
+  

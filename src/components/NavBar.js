@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import '../styles/Navbar.css'; // Import CSS for styling
+import logo from '../assets/logo.png'; // Adjust the path if necessary
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); // State to handle menu toggle
@@ -14,7 +15,8 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="company-name">J's Pristine Pressure Washing</div>
+      <a className="company-name" onClick={() => navigateTo('/')}>J's Pristine Pressure Cleaning</a>
+      
       <div className="menu-icon" onClick={() => setIsOpen(!isOpen)}>
         <div></div>
         <div></div>
@@ -24,6 +26,7 @@ const Navbar = () => {
         {/* Navigation Links */}
         <button className="nav-button" onClick={() => navigateTo('/')}>Home</button>
         <button className="nav-button" onClick={() => navigateTo('/services')}>Services</button>
+        <button className="nav-button" onClick={() => navigateTo('/Contact-Us')}>Contact Us</button>
       </div>
     </nav>
   );

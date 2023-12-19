@@ -1,0 +1,105 @@
+/* Testimonials.css */
+
+.testimonials-container {
+  position: relative;
+  width: 100%;
+  padding: 50px 0; /* Adjust padding to your preference */
+  background-image: url('../assets/splash.png'); /* Adjust path to your image */
+  background-attachment: fixed; /* Create the parallax scrolling effect */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.testimonials-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.7); /* Adjust transparency as needed */
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+.testimonials {
+  position: relative;
+  width: 100%;
+  max-width: 1200px; /* Max width to control the container size */
+  margin: auto;
+  text-align: center;
+  padding: 1rem;
+  z-index: 2;
+}
+.testimonial-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Ensure items are centered in the container */
+  gap: 1rem; /* Space between items */
+  align-items: stretch; /* Added to align the items vertically */
+}
+
+.testimonial-item {
+  flex: 0 1 calc(33.333% - 2rem); /* Adjust the width to fit three items per row */
+  margin: 1rem; /* Margin around items */
+  padding: 1rem; /* Padding inside items */
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: flex; /* Added to align image, title, review and button vertically */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+}
+
+.testimonial-item:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #FFA500;
+  margin-bottom: 1rem;
+}
+
+.testimonial-item h4 {
+  font-size: 1.5rem; /* Increased size for bolder title */
+  font-weight: bold; /* Bolder font weight */
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.testimonial-item p {
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.testimonial-item a {
+  display: inline-block;
+  background-color: #FFA500;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.testimonial-item a:hover {
+  background-color: #cc8400;
+}
+
+@media (max-width: 1200px) {
+  .testimonial-item {
+    /* Adjust the flex-basis value if needed for medium-sized screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-item {
+    flex-basis: 100%; /* Full width on smaller screens */
+  }
+}

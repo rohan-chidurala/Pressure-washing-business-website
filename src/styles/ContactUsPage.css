@@ -1,0 +1,9 @@
+.ContactUs-container{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center bottom;
+}

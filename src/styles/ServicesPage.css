@@ -1,0 +1,127 @@
+/* ServicesPage.css */
+.services-page {
+    padding: 20px;
+    padding-top: 70px;
+    text-align: center;
+    background-color: #f2f2f2; /* Light gray background for contrast */
+  }
+  
+  .services-header {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 0.5em;
+  }
+  
+  .services-subheader {
+    color: #555;
+    margin-bottom: 2em;
+  }
+  
+  .services-list {
+    display: flex;
+    justify-content: center; /* Center the items */
+    flex-wrap: wrap;
+    gap: 20px; /* Spacing between service items */
+  }
+  
+  
+  .service-item:hover {
+    transform: scale(1.03); /* Slight scale-up effect on hover */
+  }
+
+  
+.service-item {
+    width: 300px; /* Adjust the width as needed */
+    margin: 10px; /* Space around the item */
+    border-radius: 10px; /* Rounded corners for aesthetics */
+    overflow: hidden; /* Ensures nothing spills out of the border-radius */
+    display: center; /* Center the items */
+    display: flex; /* Changed from 'center' to 'flex' */
+    flex-direction: column; /* Stack the children vertically */
+    align-items: center; /* Align children in the center */
+    justify-content: space-between; 
+    transition: transform 0.3s ease;
+
+  }
+  
+  .service-item img {
+    width: 100%; /* Forces the image to fill the container */
+    height: auto; /* Maintains aspect ratio */
+    display: block; 
+    margin-bottom: 0; /* Remove bottom margin from image */
+    /* Removes bottom space under the image */
+  }
+  
+   .service-title {
+    background-color: #ffffff; /* White background for the title */
+    border-radius: 10px; /* Rounded corners for the title bar */
+
+    padding: 8px 16px; /* Padding inside the title bar */
+    box-sizing: border-box; /* Ensures padding is included in width */
+    position: relative; /* Aligns the title inside the service item */
+    bottom: 30px; /* Adjust based on your design preference */
+    margin: 0; /* Removes default margin from the h3 element */
+    text-align: center; /* Center the title text */
+    font-size: 1.1rem; /* Adjust font size as needed */
+    font-weight: bold; /* Makes the font bold */
+    color: #333; /* Dark text color for readability */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    bottom: auto; /* Remove the fixed bottom positioning */
+    position: static; /* Use static positioning instead of relative */
+    margin-top: -20px; /* Adjust to position the title closer to the image */
+    width: calc(100% - 32px); /* Reduce width according to padding */
+    box-shadow: none; /* Remove box shadow from title bar *//* Subtle shadow for the title bar */
+  }
+  
+  
+  .service-description {
+    text-align: center; /* Center-align the text */
+    padding: 0 16px; /* Add padding on the sides */
+    margin-top: 20px; /* Space from the title */
+    margin-bottom: 20px; /* Space from the button */
+  }
+
+  
+
+  .read-more-btn {
+    background-color: #FFA500; /* Sunny yellow for the button */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute; /* Absolute position for the 'Read More' button */
+    bottom: 10px; /* Position from the bottom of the service item */
+    left: 50%;
+    transform: translateX(-50%); /* Center the button */
+    font-size: 0.9rem; /* Adjust font size for button text */
+    position: static; /* Change from absolute to static positioning */
+    margin-top: 20px; /* Add space above the button */
+    transform: none; /* Remove the transform */
+    width: auto; /* Auto width to fit content */
+    padding: 10px 30px; /* Increase padding for better button size */
+  }
+  
+  .read-more-btn:hover {
+    background-color: #cc8400; /* Darker yellow for hover effect */
+  }
+  
+  /* Responsive design adjustments */
+  @media (max-width: 1200px) {
+    .service-item {
+      width: calc(33.333% - 20px); /* Three items per row on smaller screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .service-item {
+      width: calc(50% - 20px); /* Two items per row on even smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .service-item {
+      width: calc(100% - 20px); /* Full width on very small screens */
+    }
+  }
+  
