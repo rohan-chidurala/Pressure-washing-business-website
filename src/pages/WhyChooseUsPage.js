@@ -1,6 +1,7 @@
 // WhyChooseUsPage.js
 import React from 'react';
 import '../styles/WhyChooseUsPage.css';
+import imageUrl from '../assets/why us.jpg';
 
 const WhyChooseUsPage = () => {
   const CheckmarkIcon = () => (
@@ -11,22 +12,30 @@ const WhyChooseUsPage = () => {
 
   return (
     <div className="why-choose-us-container">
+      <div className="testimonial-container">
+        <div className='testimonial-image'>
+          <img src={imageUrl} alt={`Photo of guy pressure washing`} />
+        </div>
+        <div className="testimonial-section">
+          <blockquote >
+            "After experiencing frustration with responsiveness from other companies, I'm so glad I found J's Pristine Pressure Washing. From my first call, I was happy with the service provided."
+          </blockquote>
+          <cite>Debbie Lyon - Orange, CA</cite>
+        </div>
+
+      </div>
       <div className="why-choose-us-content">
         <h1>Why Choose J's Pristine Pressure Washing?</h1>
-        <p>We are a fully-insured, professional pressure washing company, using the latest power washing equipment on the market. We have completed hundreds of jobs, ensuring our customer service is unmatched. Call today to schedule your next power washing appointment!</p>
-        <ul className="benefits-list">
+        <p>
+    We are a fully-insured, professional pressure washing company based in the <span className="la">LA area</span>, using the latest power washing equipment on the market. We have completed hundreds of jobs, ensuring our customer service is unmatched. Call today to schedule your next power washing appointment!</p>
+          <ul className="benefits-list">
           <li><CheckmarkIcon /> Highly Rated Cleaning</li>
-          <li><CheckmarkIcon /> Fully Licensed & Insured</li>
+          <li><CheckmarkIcon /> Fully Licensed</li>
           <li><CheckmarkIcon /> FREE Estimates</li>
-          <li><CheckmarkIcon /> 100% Satisfaction Guaranteed</li>
+          <li><CheckmarkIcon /> 100% Satisfaction</li>
         </ul>
       </div>
-      <div className="testimonial-section">
-        <blockquote>
-          "After experiencing frustration with responsiveness from other companies, I'm so glad I found J's Pristine Pressure Washing. From my first call, I was happy with the service provided."
-        </blockquote>
-        <cite>Debbie Lyon - Orange, CA</cite>
-      </div>
+
     </div>
   );
 };

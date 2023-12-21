@@ -10,7 +10,7 @@ const ContactUsPage = () => {
 
     return (
         <div className='ContactUs-container' style={{ backgroundImage: `url(${backgroundImage})` }}>
-            <Form formName = 'Contact Us'></Form>
+            <Form formName = 'Free Quote'></Form>
         </div>
     );
 };

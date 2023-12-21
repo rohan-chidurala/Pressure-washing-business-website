@@ -9,6 +9,13 @@ const Form = ({ formName }) => {
             <input type="text" placeholder="Name" />
             <input type="email" placeholder="Email" />
             <input type="text" placeholder="Address" />
+            <input type="tel" placeholder="Phone Number" /> {/* Phone Number field */}
+            <select name="jobType" defaultValue="">
+                <option value="" disabled>Select Job Type</option>
+                <option value="houseWashing">House Washing</option>
+                <option value="drivewayCleaning">Driveway Cleaning</option>
+                <option value="windowCleaning">Window Cleaning</option>
+            </select>
             <textarea placeholder="Additional Information"></textarea>
             <button type="submit">Submit</button>
         </form>

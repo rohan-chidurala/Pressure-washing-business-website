@@ -1,25 +1,41 @@
 /* WhyChooseUsPage.css */
 .why-choose-us-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 20px;
+    flex-direction: row;
+     /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    gap: 5%;
     padding: 40px;
     background: #f1f1f1; /* Adjust the background color as needed */
     font-family: 'Arial', sans-serif; /* Use a web-safe font or import a custom one */
-}
-.why-choose-us-content {
-    max-width: 50%;
+  }
+
+  .why-choose-us-content {
+    max-width: 80%;
+    margin: auto;
     background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
     padding: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-right: 20px;
-}
-.checkmark-icon {
-    width: 20px; /* Adjust size as needed */
-    height: 20px; /* Adjust size as needed */
+    text-align: center; /* Center the text for smaller screens */
+  }
+  .why-choose-us-content p {
+    text-align: left; /* Align text to the left */
+    font-size: 1.1rem; /* Increase the font size */
+    line-height: 1.6; /* Increase space between lines for better readability */
+    margin-bottom: 1rem; /* Add space below the paragraph */
+  }
+  
+  /* Make 'LA' bold wherever it appears in paragraphs */
+  .why-choose-us-content p span.la {
+    font-weight: bold;
+  }
+  
+  .checkmark-icon {
+    width: 25px; /* Adjust size as needed */
+    height: 25px; /* Adjust size as needed */
     margin-right: 8px; /* Add some space between the icon and the text */
     fill: #FFA500; /* Color of the icon */
   }
@@ -29,82 +45,76 @@
     align-items: center; /* Center the icon and text vertically */
     margin-bottom: 10px; /* Space between list items */
     font-weight: bold;
-    /* Other styles */
+    font-size: 25px;
   }
   
-h1 {
+  h1 {
     color: #FFA500; /* Orange color for the heading */
     margin-bottom: 20px;
-}
-
-.benefits-list {
+  }
+  
+  .benefits-list {
     list-style: none;
     padding: 0;
     color: #333; /* Dark grey color for text */
-}
-
-
-.testimonial-section {
-    max-width: 50%;
+  }
+  
+  /* Container for the image and testimonial */
+  .testimonial-container {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    width: 80%; /* Set width to match the content above */
+  }
+  
+  .testimonial-image {
+    width: 100%; /* Full width of the testimonial container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .testimonial-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .testimonial-section {
+    width: 100%; /* Full width of the testimonial container */
     background: #ffffff;
     padding: 20px;
     border-radius: 8px;
-    position: relative; /* For the pseudo-element */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-}
-
-.testimonial-section::before {
-    content: '';
-    position: absolute;
-    top: -10px; right: -10px; bottom: -10px; left: -10px;
-    background: #FFA500; /* Orange background for highlight effect */
-    z-index: -1;
-    border-radius: 8px;
-}
-
-blockquote {
-    font-style: italic;
-    margin-bottom: 20px;
-    position: relative;
-    font-size: 0.9rem;
-}
-
-cite {
-    font-size: 0.8rem;
-    color: #666; /* Lighter grey for the citation */
-}
-
-@media (max-width: 768px) {
-    .why-choose-us-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .why-choose-us-content,
-    .testimonial-section {
-        max-width: 100%;
-        margin-right: 0;
-    }
-
-    .testimonial-section::before {
-        top: -20px; right: -20px; bottom: -20px; left: -20px;
-    }
-}
-
-  
-  .testimonial-section {
-    flex: 1;
-    padding: 20px;
-    background: #f9f9f9;
-    border-left: 5px solid orange; /* Adjust color to match your theme */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid orange;
   }
   
   blockquote {
     font-style: italic;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
   }
   
   cite {
-    display: block;
-    margin-top: 10px;
+    font-size: 0.8rem;
+    color: #666;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .why-choose-us-container {
+      padding: 20px;
+      flex-direction: column-reverse; /* Stack children vertically */
+
+    }
+    .why-choose-us-content,
+    .testimonial-container {
+      max-width: 100%;
+
+    }
+    .testimonial-image, 
+    .testimonial-section {
+      width: 100%; /* Adjust for smaller screens */
+    }
   }
   
