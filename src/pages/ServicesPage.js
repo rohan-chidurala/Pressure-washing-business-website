@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styles/ServicesPage.css';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
-import WhyChooseUsPage from './WhyChooseUsPage'; // Import the new page component
 
 const ServicesPage = ({ servicesData, addLearnMoreButton }) => {
   const navigate = useNavigate();
@@ -17,7 +16,7 @@ const ServicesPage = ({ servicesData, addLearnMoreButton }) => {
       <div className="services-list">
         {servicesData.map((service, index) => (
           <div className="service-item" key={index}>
-            <img src={service.imageUrl} alt={service.title} className="service-image" />
+            <img loading="lazy" title={service.title} src={service.imageUrl} alt={service.title} className="service-image" />
             <h3 className="service-title">{service.title}</h3>
             <p className="service-description">{service.description}</p>
             {addLearnMoreButton ? (

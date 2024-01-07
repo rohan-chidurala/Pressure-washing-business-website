@@ -1,5 +1,4 @@
 {
-  "homepage": "http://rohan-chidurala.github.io/test",
   "name": "my-react-app",
   "version": "0.1.0",
   "private": true,
@@ -11,7 +10,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet-async": "^2.0.4",
-    "react-router-dom": "^6.20.1",
+    "react-router-dom": "^6.21.1",
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",

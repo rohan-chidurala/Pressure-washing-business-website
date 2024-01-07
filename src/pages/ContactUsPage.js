@@ -1,5 +1,3 @@
-import React, { useState } from 'react';
-import axios from 'axios';
 import Form from '../components/Form';
 import '../styles/ContactUsPage.css'
 

@@ -14,7 +14,7 @@ const WhyChooseUsPage = () => {
     <div className="why-choose-us-container">
       <div className="testimonial-container">
         <div className='testimonial-image'>
-          <img src={imageUrl} alt={`Photo of guy pressure washing`} />
+          <img title="Our Pressure Cleaning Services" src={imageUrl} alt="" />
         </div>
         <div className="testimonial-section">
           <blockquote >

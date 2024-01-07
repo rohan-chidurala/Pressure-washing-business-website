@@ -20,6 +20,7 @@ import review3 from '../assets/review1.png'; // Adjust the path as necessary
 import houseWashingImg from '../assets/house washing.png';
 import drivewayCleaningImg from '../assets/Driveway.png';
 import windowCleaningImg from '../assets/window cleaning.png';
+import {Helmet} from 'react-helmet-async'
 
 
 
@@ -45,7 +46,6 @@ const servicesData = [
 
 
 
-
 const HomePage = () => {
   const shouldShowLearnMoreButton = true;
 
@@ -59,6 +59,19 @@ const HomePage = () => {
 
   return (
     <div>
+      <Helmet> 
+        <title>J's Pristine Pressure Washing - Your Solution for Cleaner Homes</title>
+        <meta name="description" content="Discover top-notch pressure washing services for homes and businesses in LA. Quality, efficiency, and eco-friendly solutions await you at J's Pristine Pressure Washing." />
+        <link rel="canonical" href="%PUBLIC_URL%/home" /> {/* Replace with your website URL */}
+
+        <meta name="keywords" content="pressure washing, eco-friendly cleaning, residential cleaning, commercial cleaning, LA pressure washing" />
+        {/* Add more relevant keywords */}
+        <meta property="og:title" content="J's Pristine Pressure Washing - Professional Cleaning Services" />
+        <meta property="og:description" content="Experience unmatched cleaning services with J's Pristine Pressure Washing. Your go-to choice for residential and commercial pressure washing in Los Angeles." />
+        <meta property="og:image" content="%PUBLIC_URL%/logo.svg" /> {/* Replace with your image URL */}
+        <meta property="og:url" content="%PUBLIC_URL%/home" /> {/* Replace with your website URL */}
+        {/* Add other social media meta tags as needed */}
+      </Helmet>
       <div className="full-screen-background" style={{ backgroundImage: `url(${backgroundImage})` }}>
         <div className="content">
           <div className="description">
